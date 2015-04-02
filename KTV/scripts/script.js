@@ -4,7 +4,11 @@ $(function() {
     $(".shade_bg").fadeIn(200);
     $(".shade_content").fadeIn(400);
   });
-  $(".shade_bg").click(function() {
+  $(".close").click(function() {
+    $(".shade_bg").fadeOut(200);
+    $(".shade_content").fadeOut(200);
+  });
+   $(".shade_form .back").click(function() {
     $(".shade_bg").fadeOut(200);
     $(".shade_content").fadeOut(200);
   });

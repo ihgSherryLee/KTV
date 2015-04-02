@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>添加歌手</title>
+    <title>歌手编辑</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="styles/style.css" rel="stylesheet" media="screen">
@@ -64,6 +64,7 @@
                       <div class="control-group">
                         <label class="control-label">头像<span class="required">*</span></label>
                         <div class="controls">
+                          <img class="star_img" src="images/cat.jpg">
                           <button type="button" class="btn btn-mini btn-primary">选择文件</button>
                           <span class="choosing-warn">未选择文件</span>
                         </div>
@@ -71,13 +72,13 @@
                       <div class="control-group">
                         <label class="control-label">姓名<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="name" type="text" class="span5 m-wrap"/>
+                          <input name="name" type="text" class="span5 m-wrap" value="ALin"/>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">姓名拼音<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="pinyin" type="text" class="span5 m-wrap"/>
+                          <input name="pinyin" type="text" class="span5 m-wrap" value="huangliling"/>
                         </div>
                       </div>
                       <div class="control-group">
@@ -85,36 +86,36 @@
                         <div class="controls">
                           <select class="span5">
                             <option>男</option>
-                            <option>女</option>
+                            <option selected="selected">女</option>
                           </select>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">国籍<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="country" type="text" class="span5 m-wrap"/>
+                          <input name="country" type="text" class="span5 m-wrap" value="中国大陆"/>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">所属区域<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="area" type="text" class="span5 m-wrap"/>
+                          <input name="area" type="text" class="span5 m-wrap" value="华语"/>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">公司<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="company" type="text" class="span5 m-wrap"/>
+                          <input name="company" type="text" class="span5 m-wrap" value="公司A"/>
                         </div>
                       </div>
                       <div class="control-group">
                         <label class="control-label">生日<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="birthday" type="text" class="span5 m-wrap"/>
+                          <input name="birthday" type="text" class="span5 m-wrap"  value="2015-01-16 15:13:50"/>
                         </div>
                       </div>
                       <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">添加</button>
+                        <button type="submit" class="btn btn-primary">修改</button>
                         <a href="singer_list.html"><button type="button" class="btn back">返回</button></a>
                       </div>
                     </fieldset>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>添加歌手</title>
+    <title>编辑歌曲</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="styles/style.css" rel="stylesheet" media="screen">
@@ -40,10 +40,10 @@
       <div class="row-fluid">
         <div class="span3" id="sidebar">
           <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-            <li class="active">
+            <li>
               <a href="singer_list.html"><i class="icon-chevron-right"></i> 歌手管理</a>
             </li>
-            <li>
+            <li class="active">
               <a href="song_list.html"><i class="icon-chevron-right"></i> 歌曲管理</a>
             </li>
           </ul>
@@ -54,7 +54,7 @@
             <!-- block -->
             <div class="block">
               <div class="navbar navbar-inner block-header">
-                <div class="muted pull-left">添加歌手</div>
+                <div class="muted pull-left">添加歌曲</div>
               </div>
               <div class="block-content collapse in">
                 <div class="span12">
@@ -62,60 +62,41 @@
                   <form action="#" id="form_sample_1" class="form-horizontal">
                     <fieldset>
                       <div class="control-group">
-                        <label class="control-label">头像<span class="required">*</span></label>
+                        <label class="control-label">名称<span class="required">*</span></label>
                         <div class="controls">
-                          <button type="button" class="btn btn-mini btn-primary">选择文件</button>
-                          <span class="choosing-warn">未选择文件</span>
+                          <input type="text" name="name" data-required="1" class="span5 m-wrap"/>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">姓名<span class="required">*</span></label>
-                        <div class="controls">
-                          <input name="name" type="text" class="span5 m-wrap"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label">姓名拼音<span class="required">*</span></label>
+                        <label class="control-label">歌曲名拼音<span class="required">*</span></label>
                         <div class="controls">
                           <input name="pinyin" type="text" class="span5 m-wrap"/>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">性别<span class="required">*</span></label>
+                        <label class="control-label">演唱歌手<span class="required">*</span></label>
                         <div class="controls">
-                          <select class="span5">
-                            <option>男</option>
-                            <option>女</option>
-                          </select>
+                          <input name="singer" type="text" class="span5 m-wrap"/>
+                          <input name="singer" type="text" class="span5 m-wrap"/>
+                          <button class="btn btn-primary btn_choose">选择</button>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">国籍<span class="required">*</span></label>
+                        <label class="control-label">发行时间<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="country" type="text" class="span5 m-wrap"/>
+                          <input name="time" type="text" class="span5 m-wrap"/>
                         </div>
                       </div>
                       <div class="control-group">
-                        <label class="control-label">所属区域<span class="required">*</span></label>
+                        <label class="control-label">视频<span class="required">*</span></label>
                         <div class="controls">
-                          <input name="area" type="text" class="span5 m-wrap"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label">公司<span class="required">*</span></label>
-                        <div class="controls">
-                          <input name="company" type="text" class="span5 m-wrap"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label">生日<span class="required">*</span></label>
-                        <div class="controls">
-                          <input name="birthday" type="text" class="span5 m-wrap"/>
+                          <button type="button" class="span5 btn btn-large btn-block btn-primary">选择文件</button>
+                          <span class="choosing-warn">未选择文件</span>
                         </div>
                       </div>
                       <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">添加</button>
-                        <a href="singer_list.html"><button type="button" class="btn back">返回</button></a>
+                        <button type="submit" class="btn btn-primary">修改</button>
+                        <a href="song_list.html"><button type="button" class="btn back">返回</button></a>
                       </div>
                     </fieldset>
                   </form>
@@ -124,6 +105,55 @@
               </div>
             </div>
             <!-- /block -->
+            <div class="shade hide">
+              <div class="shade_bg hide"></div>
+              <div class="span3 shade_content hide">
+                <div class="navbar navbar-inner block-header">
+                  <button type="button" class="close">×</button>
+                  <div class="muted pull-left">选择歌手</div>
+                </div>
+                <form class="shade_form">
+                  <div class="controls">
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class="checkbox" value="XXX" />
+                      邓紫棋
+                    </label>
+                  </div>
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-mini">修改</button>
+                    <button type="button" class="btn back btn-mini">返回</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
